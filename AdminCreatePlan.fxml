@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="255.0" layoutY="14.0" text="Create Plan Page" />
+      <TextField fx:id="createPlanIdTextField" layoutX="113.0" layoutY="58.0" />
+      <Label layoutX="51.0" layoutY="62.0" text="Plan ID" />
+      <Label layoutX="51.0" layoutY="99.0" text="Plan Type" />
+      <ComboBox fx:id="planTypeComboBox" layoutX="113.0" layoutY="95.0" prefWidth="150.0" />
+      <Label layoutX="51.0" layoutY="175.0" text="Area" />
+      <Label layoutX="50.0" layoutY="135.0" text="Divison" />
+      <ComboBox fx:id="planDivisonComboBox" layoutX="112.0" layoutY="131.0" prefWidth="150.0" />
+      <ComboBox fx:id="planAreaComboBox" layoutX="113.0" layoutY="171.0" prefWidth="150.0" />
+      <Button layoutX="371.0" layoutY="86.0" mnemonicParsing="false" onAction="#addPlanButton" prefHeight="26.0" prefWidth="87.0" text="Add Plan" />
+      <Label fx:id="showSuccessMessageLabel" alignment="CENTER" layoutX="369.0" layoutY="147.0" prefHeight="19.0" prefWidth="90.0" style="-fx-border-color: black;" />
+      <Label layoutX="50.0" layoutY="211.0" text="Price" />
+      <TextField fx:id="createPlanPriceTextField" layoutX="112.0" layoutY="207.0" />
+   </children>
+</AnchorPane>

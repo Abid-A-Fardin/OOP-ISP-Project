@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="clientIDTextField" layoutX="90.0" layoutY="35.0" />
+      <Label layoutX="36.0" layoutY="39.0" text="Client ID" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="73.0" prefHeight="18.0" prefWidth="46.0" text="Type" />
+      <ComboBox fx:id="clientTypeComboBox" layoutX="90.0" layoutY="70.0" prefWidth="150.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="112.0" prefHeight="18.0" prefWidth="46.0" text="Plan ID" />
+      <TextField fx:id="internetPlanIDTextField" layoutX="90.0" layoutY="108.0" />
+      <TableView fx:id="clientDetailsTableView" layoutX="324.0" layoutY="179.0" prefHeight="200.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="clientIdColumn" prefWidth="75.0" text="Client ID" />
+          <TableColumn fx:id="clientTypeColumn" prefWidth="75.0" text="Client Type" />
+            <TableColumn fx:id="internetPlanColumn" prefWidth="75.0" text="Plan" />
+        </columns>
+      </TableView>
+      <Button layoutX="366.0" layoutY="99.0" mnemonicParsing="false" onAction="#showClientInfoButton" prefHeight="26.0" prefWidth="142.0" text="Show Client Info" />
+      <Button layoutX="82.0" layoutY="179.0" mnemonicParsing="false" onAction="#saveClientInfoButton" prefHeight="26.0" prefWidth="142.0" text="Save Client Info" />
+   </children>
+</AnchorPane>
