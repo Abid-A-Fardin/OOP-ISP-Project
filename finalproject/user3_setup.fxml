@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.User3Setup">
+   <children>
+      <Label layoutX="115.0" layoutY="25.0" prefHeight="48.0" prefWidth="347.0" text="Installation and Setup Guide">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <VBox layoutX="47.0" layoutY="80.0" prefHeight="286.0" prefWidth="506.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="506.0" text="Step 1: Unbox your router and accesories." />
+            <Label prefHeight="33.0" prefWidth="506.0" text="Step 2: Connect the power adapter." />
+            <Label prefHeight="31.0" prefWidth="517.0" text="Step 3: Plug the LAN cable into your PC." />
+            <Label prefHeight="34.0" prefWidth="506.0" text="Step 4: Power on the router." />
+            <Label prefHeight="36.0" prefWidth="514.0" text="Step 5: Wait for internet lights to turn green." />
+            <TextArea prefHeight="102.0" prefWidth="506.0" text="If you are still having problem or issues, please contact our service providers. &#10;You will find Contact on the left panel on our homepage.&#10;">
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

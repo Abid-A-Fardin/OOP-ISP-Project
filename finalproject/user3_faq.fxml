@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="558.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.User3Faq">
+   <children>
+      <Label layoutX="154.0" layoutY="25.0" prefHeight="70.0" prefWidth="362.0" text="Frequently Asked Questions">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="42.0" layoutY="96.0" prefHeight="431.0" prefWidth="618.0" spacing="10.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <TitledPane animated="false" prefHeight="122.0" prefWidth="557.0" text="What plans are available?">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="78.0" prefWidth="427.0">
+                     <children>
+                        <TextArea layoutY="1.0" prefHeight="54.0" prefWidth="598.0" text="We are currently offering Basic, Standard and Premium plans." />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" text="How can I check coverage in my area?">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="109.0" prefWidth="555.0">
+                     <children>
+                        <TextArea prefHeight="70.0" prefWidth="598.0" text="On our homepage, if you click the Check Coverage button in the left panel, you will be able to see if we cover&#10; your area." />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" prefHeight="143.0" prefWidth="598.0" text="How do I pay? or How to select payment method?">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="598.0" text="We accept both Cash on Delivery and Mobile Banking. Upon selecting your desired Internet plan, you will be &#10;automatically directed to the payment option where you can select your preferred payment option.&#10;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" prefHeight="150.0" prefWidth="557.0" text="How to apply promotions?">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea layoutX="-1.0" layoutY="-3.0" prefHeight="86.0" prefWidth="598.0" text="After selecting your desired Internet plan when you proceed to payment, you will see a designated box for&#10; promo code. You will enter your promo code there and get discount. You can find promo codes from &#10;promotions on the left panel of our homepage.&#10;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </VBox>
+      <Label layoutX="9.0" layoutY="12.0" prefHeight="78.0" prefWidth="598.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="461.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.User3Contact">
+   <children>
+      <Label layoutX="162.0" layoutY="38.0" prefHeight="53.0" prefWidth="255.0" text="Contact Support">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Label>
+      <Text layoutX="67.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="94.93670654296875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" wrappingWidth="94.93670654296875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject :" wrappingWidth="73.33673095703125">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="namefield" layoutX="115.0" layoutY="98.0" prefHeight="26.0" prefWidth="212.0" promptText="Enter your Name" />
+      <TextField fx:id="emailfield" layoutX="115.0" layoutY="144.0" prefHeight="26.0" prefWidth="309.0" promptText="Enter your email" />
+      <ComboBox fx:id="issueComboBox" layoutX="126.0" layoutY="186.0" prefHeight="26.0" prefWidth="190.0" promptText="select your issue" />
+      <TextArea fx:id="issuefield" layoutX="57.0" layoutY="243.0" prefHeight="150.0" prefWidth="560.0" />
+      <Label fx:id="getBackLabel" layoutX="112.0" layoutY="412.0" prefHeight="26.0" prefWidth="433.0" />
+   </children>
+</AnchorPane>
