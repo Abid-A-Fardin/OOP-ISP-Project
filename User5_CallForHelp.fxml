@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User5CallForHelp">
+   <children>
+      <Label layoutX="189.0" layoutY="27.0" prefHeight="59.0" prefWidth="252.0" text="Contact Support" textFill="#a81d1d">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="315.0" layoutY="210.0" mnemonicParsing="false" onAction="#sendsIssueDetailsButton" prefHeight="25.0" prefWidth="63.0" text="Send" />
+      <Button layoutX="315.0" layoutY="122.0" mnemonicParsing="false" onAction="#callNowButton" text="Call Now" />
+      <Label layoutX="29.0" layoutY="126.0" text="Support Number:" />
+      <TextField layoutX="134.0" layoutY="122.0" text="01710000000" />
+      <Label layoutX="29.0" layoutY="168.0" text="Select Issue:" />
+      <TextField fx:id="issueDeatilsTextField" layoutX="134.0" layoutY="210.0" promptText="Type issues here..." />
+      <ComboBox fx:id="selectsIssueComboBox" layoutX="134.0" layoutY="164.0" prefWidth="150.0" />
+      <Label layoutX="29.0" layoutY="214.0" text="Send issue Details:" />
+   </children>
+</AnchorPane>

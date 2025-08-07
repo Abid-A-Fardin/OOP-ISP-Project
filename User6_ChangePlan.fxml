@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="435.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User6ChangePlan">
+   <children>
+      <Label layoutX="241.0" layoutY="37.0" text="Change Plan" textFill="#a81d1d">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="91.0" text="Your Current Plan:" />
+      <TextField fx:id="currentPlanTextField" layoutX="167.0" layoutY="87.0" text="Basic 25 Mbps 500 BDT " />
+      <GridPane layoutX="31.0" layoutY="141.0" prefHeight="112.0" prefWidth="546.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.6666259765625" minWidth="10.0" prefWidth="156.00002670288086" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="422.33335876464844" minWidth="10.0" prefWidth="141.00001017252603" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="422.33335876464844" minWidth="10.0" prefWidth="150.66666666666669" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="422.33335876464844" minWidth="10.0" prefWidth="184.66666666666669" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Basic" GridPane.rowIndex="1" />
+            <Label text="Standard" GridPane.rowIndex="2" />
+            <Label text="Premium" GridPane.rowIndex="3" />
+            <Label text="25 Mbps" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Plan Name" textFill="#280cdd" />
+            <Label text="Speed" textFill="#280cdd" GridPane.columnIndex="1" />
+            <Label text="50 Mbps" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="100 Mbps" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Price" textFill="#280cdd" GridPane.columnIndex="2" />
+            <Label text="500 BDT" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="800 BDT" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label text="1200 BDT" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <RadioButton fx:id="basicPlanRadioButton" mnemonicParsing="false" text="Select Basic Plan" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <RadioButton fx:id="standardPlanRadioButton" mnemonicParsing="false" text="Select Standard Plan" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <RadioButton fx:id="premiumPlanRadioBUtton" mnemonicParsing="false" text="Select Premium Plan" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label text="Select" textFill="#280cdd" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="31.0" layoutY="279.0" text="New Plan Effective from:" />
+      <DatePicker fx:id="newPlanDatePicker" layoutX="181.0" layoutY="275.0" />
+      <Button layoutX="33.0" layoutY="324.0" mnemonicParsing="false" onAction="#confirmChangeButton" prefHeight="46.0" prefWidth="149.0" text="Confirm Plan Change" />
+   </children>
+</AnchorPane>

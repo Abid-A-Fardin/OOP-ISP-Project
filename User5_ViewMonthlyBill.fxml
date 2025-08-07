@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="642.0" spacing="30.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="247.0" text="View Monthly Plan" textFill="#a81d1d">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="600.0" spacing="60.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="23.0" prefWidth="164.0" text="List View:" />
+            <ComboBox fx:id="listViewComboBox" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <GridPane prefHeight="100.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="117.0" text="Due date:" />
+            <Label text="Usage: " GridPane.rowIndex="1" />
+            <Label text="Amount:" GridPane.rowIndex="2" />
+            <Label fx:id="usageLabel" text="usage" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="amountlabel" text="amount" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="dueDateLabel" text="dueDate" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Line endX="100.0" startX="-499.9156494140625" startY="0.4595598876476288" />
+      <HBox alignment="CENTER" prefHeight="73.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#downloadPDFButton" prefHeight="25.0" prefWidth="188.0" text="Download PDF" />
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#goBackButton" prefHeight="25.0" prefWidth="191.0" text="Back" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
