@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="addPlanForOfficeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="258.0" layoutY="14.0" text="Add Plan to Office Page" />
+      <Button layoutX="24.0" layoutY="121.0" mnemonicParsing="false" onAction="#addPlanShowAllOfficesButton" text="Show all offices" />
+      <TableView fx:id="addPlanAllOfficeTableView" layoutX="24.0" layoutY="159.0" prefHeight="200.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="addPlanDivisionColumn" prefWidth="75.0" text="Division" />
+          <TableColumn fx:id="addPlanOfficeAreaColumn" prefWidth="75.0" text="Area" />
+            <TableColumn fx:id="addPlanHouseNumberColumn" prefWidth="93.5999755859375" text="House Number" />
+            <TableColumn fx:id="addPlanRoadNumberColumn" prefWidth="94.4000244140625" text="Road Number" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="64.0" text="Choose Plan" />
+      <ComboBox fx:id="addPlanChoosePlanComboBox" layoutX="108.0" layoutY="60.0" prefWidth="150.0" />
+      <TableView fx:id="addPlanAllPlanTableView" layoutX="400.0" layoutY="159.0" prefHeight="200.0" prefWidth="222.0">
+         <columns>
+            <TableColumn fx:id="addPlanPlanIdColumn" prefWidth="80.800048828125" text="Plan ID" />
+            <TableColumn fx:id="addPlanPlanAreaColumn" prefWidth="70.39996337890625" text="Area" />
+            <TableColumn fx:id="addPlanPlanPriceColumn" prefWidth="70.39996337890625" text="Price" />
+         </columns>
+      </TableView>
+      <Button layoutX="514.0" layoutY="121.0" mnemonicParsing="false" onAction="#addPlanShowAllPlansButton" text="Show all plans" />
+      <Button layoutX="528.0" layoutY="69.0" mnemonicParsing="false" onAction="#addPlanAddPlanButton" text="Add Plan" />
+      <Label layoutX="24.0" layoutY="95.0" text="Office House Number" />
+      <TextField fx:id="addPlanChooseHouseNumberTextField" layoutX="143.0" layoutY="90.0" prefHeight="26.0" prefWidth="114.0" />
+   </children>
+</AnchorPane>

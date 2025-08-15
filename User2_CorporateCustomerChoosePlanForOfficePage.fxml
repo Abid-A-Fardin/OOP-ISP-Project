@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="choosePlanForOfficeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="258.0" layoutY="14.0" text="Add Plan to Office Page" />
+      <Button layoutX="24.0" layoutY="121.0" mnemonicParsing="false" onAction="#choosePlanShowAllOfficesButton" text="Show all offices" />
+      <TableView fx:id="choosePlanAllOfficeTableView" layoutX="24.0" layoutY="159.0" prefHeight="200.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="choosePlanDivisionColumn" prefWidth="75.0" text="Division" />
+          <TableColumn fx:id="choosePlanOfficeAreaColumn" prefWidth="75.0" text="Area" />
+            <TableColumn fx:id="choosePlanHouseNumberColumn" prefWidth="93.5999755859375" text="House Number" />
+            <TableColumn fx:id="choosePlanRoadNumberColumn" prefWidth="94.4000244140625" text="Road Number" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="64.0" text="Choose Plan" />
+      <ComboBox fx:id="choosePlanComboBox" layoutX="108.0" layoutY="60.0" prefWidth="150.0" />
+      <TableView fx:id="choosePlanAllPlanTableView" layoutX="400.0" layoutY="159.0" prefHeight="200.0" prefWidth="222.0">
+         <columns>
+            <TableColumn fx:id="choosePlanPlanIdColumn" prefWidth="80.800048828125" text="Plan ID" />
+            <TableColumn fx:id="choosePlanPlanAreaColumn" prefWidth="70.39996337890625" text="Area" />
+            <TableColumn fx:id="choosePlanPlanPriceColumn" prefWidth="70.39996337890625" text="Price" />
+         </columns>
+      </TableView>
+      <Button layoutX="514.0" layoutY="121.0" mnemonicParsing="false" onAction="#choosePlanShowAllPlansButton" text="Show all plans" />
+      <Button layoutX="528.0" layoutY="69.0" mnemonicParsing="false" onAction="#choosePlanAddPlanButton" text="Add Plan" />
+   </children>
+</AnchorPane>
