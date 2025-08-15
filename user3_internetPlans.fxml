@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.User3InternetPlansController">
+   <children>
+      <Label layoutX="140.0" layoutY="65.0" prefHeight="50.0" prefWidth="375.0" text="Available Internet Plans">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <TableView fx:id="internetTableView" layoutX="25.0" layoutY="140.0" prefHeight="224.0" prefWidth="619.0">
+        <columns>
+          <TableColumn fx:id="internetPlanCol" prefWidth="178.4000473022461" text="Plan Name" />
+            <TableColumn fx:id="speedCol" prefWidth="91.199951171875" text="Speed(Mbps)" />
+            <TableColumn fx:id="priceCol" prefWidth="103.99993896484375" text="Price" />
+            <TableColumn fx:id="routerCol" prefWidth="100.800048828125" text="Has Router" />
+            <TableColumn fx:id="installationCol" prefWidth="142.39998168945317" text="Has installation fee" />
+        </columns>
+      </TableView>
+      <Button layoutX="414.0" layoutY="380.0" mnemonicParsing="false" onAction="#selectPlanOnAction" prefHeight="26.0" prefWidth="220.0" text="Select Plan" />
+      <Label fx:id="planlabel" layoutX="187.0" layoutY="455.0" prefHeight="50.0" prefWidth="414.0" />
+      <Button layoutX="27.0" layoutY="376.0" mnemonicParsing="false" onAction="#loadPlansFromBinOnAction" prefHeight="59.0" prefWidth="226.0" text="Load plans" />
+   </children>
+</AnchorPane>

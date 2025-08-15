@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="423.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.User4Contract">
+   <children>
+      <ScrollPane layoutX="12.0" layoutY="75.0" prefHeight="326.0" prefWidth="587.0">
+        <content>
+          <AnchorPane fx:id="termsArea" minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="587.0">
+               <children>
+                  <TextArea prefHeight="326.0" prefWidth="587.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="153.0" layoutY="21.0" prefHeight="44.0" prefWidth="293.0" text="Contract Terms">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

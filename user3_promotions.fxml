@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="516.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.User3PromotionsController">
+   <children>
+      <Label layoutX="185.0" layoutY="27.0" prefHeight="58.0" prefWidth="331.0" text="Current Promotions" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="promoTable" layoutX="22.0" layoutY="139.0" prefHeight="258.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="PromoNameCol" prefWidth="139.9999656677246" text="Promo Name" />
+          <TableColumn fx:id="promoDescriptionCol" prefWidth="350.3999938964844" text="Description" />
+            <TableColumn fx:id="promoValidityCol" prefWidth="139.20001220703125" text="Validity date" />
+        </columns>
+      </TableView>
+      <Label layoutX="107.0" layoutY="85.0" prefHeight="34.0" prefWidth="364.0" text="Limited-time offers for new users!!!" textFill="#ef0303">
+         <padding>
+            <Insets left="80.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="399.0" layoutY="419.0" mnemonicParsing="false" onAction="#loadPromotionsOnAction" prefHeight="58.0" prefWidth="234.0" text="Load Promotions" />
+   </children>
+</AnchorPane>
