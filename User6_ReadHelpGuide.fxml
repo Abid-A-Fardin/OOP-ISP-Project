@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="447.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User6_ReadHelpGuideController">
+   <children>
+      <Label layoutX="250.0" layoutY="49.0" text="Help Centre" textFill="#a81d1d">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="114.0" text="Categories:" />
+      <ComboBox fx:id="guideCategoryComboBox" layoutX="160.0" layoutY="110.0" onAction="#guideCategoryComboBox" prefWidth="150.0" />
+      <Label layoutX="85.0" layoutY="167.0" text="Help Guide:" />
+      <TextArea fx:id="guideContentTextArea" layoutX="160.0" layoutY="167.0" prefHeight="200.0" prefWidth="333.0" promptText="Help guide content shows up here..." />
+   </children>
+</AnchorPane>

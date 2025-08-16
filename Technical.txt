@@ -1,0 +1,3 @@
+check router power
+restart router if connection is lost
+to reset password go to "Reset Password"

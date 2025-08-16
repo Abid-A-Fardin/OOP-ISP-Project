@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paymentInfoScene" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User5_PaymentInfoController">
+   <children>
+      <Label layoutX="221.0" layoutY="40.0" text="Payment Info" textFill="#a81d1d">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="130.0" text="Payment Method:" />
+      <Label layoutX="62.0" layoutY="183.0" text="Card Number: " />
+      <Label layoutX="62.0" layoutY="229.0" text="Card Holder Name:" />
+      <Label layoutX="62.0" layoutY="278.0" />
+      <ComboBox fx:id="paymentMethodComboBox" layoutX="203.0" layoutY="126.0" prefWidth="150.0" />
+      <TextField fx:id="cardNumberTextField" layoutX="204.0" layoutY="179.0" />
+      <TextField fx:id="cardHolderNameTextField" layoutX="204.0" layoutY="225.0" />
+   </children>
+</AnchorPane>

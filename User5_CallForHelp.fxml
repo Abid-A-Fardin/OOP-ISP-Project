@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contactSupportScene" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User5_CallForHelpController">
+   <children>
+      <Label layoutX="189.0" layoutY="27.0" prefHeight="59.0" prefWidth="252.0" text="Contact Support" textFill="#a81d1d">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="sendsIssueDetailsButton" layoutX="315.0" layoutY="171.0" mnemonicParsing="false" onAction="#sendsIssueDetailsButton" prefHeight="25.0" prefWidth="63.0" text="Send" />
+      <Label layoutX="29.0" layoutY="120.0" text="Select Issue:" />
+      <TextField fx:id="issueDetailsTextField" layoutX="134.0" layoutY="171.0" promptText="Type issues here..." />
+      <ComboBox fx:id="selectsIssueComboBox" layoutX="134.0" layoutY="116.0" prefWidth="150.0" />
+      <Label layoutX="29.0" layoutY="175.0" text="Send issue Details:" />
+   </children>
+</AnchorPane>

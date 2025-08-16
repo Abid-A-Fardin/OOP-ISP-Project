@@ -1,4 +1,4 @@
-package com.example.finalproject;
+package iub.oop.courseprojects.oopfinalproject;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

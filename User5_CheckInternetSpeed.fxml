@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="checkInternetSpeedScene" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User5_CheckInternetSpeedController">
+   <children>
+      <Label layoutX="175.0" layoutY="45.0" prefHeight="46.0" prefWidth="279.0" text="Check Internet Speed" textFill="#a81d1d">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="84.0" layoutY="106.0" mnemonicParsing="false" onAction="#startTestButton" prefHeight="55.0" prefWidth="432.0" text="Start Test">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="39.0" layoutY="182.0" prefHeight="130.0" prefWidth="346.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Download Speed:" />
+            <Label text="Upload Speed:" GridPane.rowIndex="1" />
+            <Label text="Latency:" GridPane.rowIndex="2" />
+            <Label fx:id="downloadSpeedLabel" text="downloadSpeed" GridPane.columnIndex="1" />
+            <Label fx:id="uploadSpeedLabel" text="uploadSpeed" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="latencyLabel" text="latency" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

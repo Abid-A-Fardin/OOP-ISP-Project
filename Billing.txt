@@ -1,0 +1,2 @@
+to view past bills go to "View Monthly Bill"
+change payment methods from "Change my Payment Method"
