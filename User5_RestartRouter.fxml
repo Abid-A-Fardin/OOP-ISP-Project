@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestartRouter">
+<AnchorPane fx:id="restartRouterScene" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User5_RestartRouterController">
    <children>
       <Label layoutX="215.0" layoutY="38.0" text="Restart Router" textFill="#a81d1d">
          <font>

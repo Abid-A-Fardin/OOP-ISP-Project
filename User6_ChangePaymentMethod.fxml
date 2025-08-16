@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="412.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User6ChangePaymentMethod">
+<AnchorPane fx:id="changePaymentMethodScene" prefHeight="412.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User6_ChangePaymentMethodController">
    <children>
       <Label layoutX="155.0" layoutY="46.0" text="Change Payment Method" textFill="#a81d1d">
          <font>

@@ -7,10 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User6ScheduleInstallation">
+<AnchorPane fx:id="scheduleInstallationScene" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User6_ScheduleInstallationController">
    <children>
-      <Label layoutX="177.0" layoutY="47.0" text="Schedule Installation" textFill="#a81d1d">
+      <Label layoutX="188.0" layoutY="32.0" text="Schedule Installation" textFill="#a81d1d">
          <font>
             <Font size="27.0" />
          </font>
@@ -19,6 +18,6 @@
       <TextField fx:id="addressTextField" layoutX="132.0" layoutY="196.0" prefHeight="25.0" prefWidth="336.0" />
       <ComboBox fx:id="timeSlotsComboBox" layoutX="132.0" layoutY="104.0" prefWidth="150.0" />
       <Label layoutX="51.0" layoutY="108.0" text="Time Slots:" />
-      <Button layoutX="48.0" layoutY="275.0" mnemonicParsing="false" onAction="#confirmAppoinmentButton" prefHeight="39.0" prefWidth="130.0" text="Confirm Appoinment" />
+      <Button layoutX="48.0" layoutY="275.0" mnemonicParsing="false" onAction="#confirmAppointmentButton" prefHeight="39.0" prefWidth="165.0" text="Confirm Appointment" />
    </children>
 </AnchorPane>

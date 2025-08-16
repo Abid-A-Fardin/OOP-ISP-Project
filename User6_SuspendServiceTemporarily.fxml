@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User6SuspendServiceTemporarily">
+<AnchorPane fx:id="suspendServiceTemporarilyScene" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User6_SuspendServiceTemporarilyController">
    <children>
       <Label layoutX="134.0" layoutY="34.0" text="Temporary Service Suspension" textFill="#a81d1d">
          <font>

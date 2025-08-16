@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckInternetSpeed">
+<AnchorPane fx:id="checkInternetSpeedScene" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User5_CheckInternetSpeedController">
    <children>
       <Label layoutX="175.0" layoutY="45.0" prefHeight="46.0" prefWidth="279.0" text="Check Internet Speed" textFill="#a81d1d">
          <font>

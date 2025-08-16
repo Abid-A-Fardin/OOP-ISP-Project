@@ -11,9 +11,9 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="642.0" spacing="30.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="viewMonthlyBillScene" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="495.0" spacing="30.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseprojects.oopfinalproject.User5_ViewMonthlyBillController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="247.0" text="View Monthly Plan" textFill="#a81d1d">
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="247.0" text="View Monthly Bill" textFill="#a81d1d">
          <font>
             <Font size="27.0" />
          </font>
@@ -43,7 +43,7 @@
             <Label fx:id="dueDateLabel" text="dueDate" GridPane.columnIndex="1" />
          </children>
       </GridPane>
-      <Line endX="100.0" startX="-499.9156494140625" startY="0.4595598876476288" />
+      <Line endX="100.0" startX="-328.4819030761719" startY="-0.0011597672710195184" />
       <HBox alignment="CENTER" prefHeight="73.0" prefWidth="600.0" spacing="30.0">
          <children>
             <Button mnemonicParsing="false" onAction="#downloadPDFButton" prefHeight="25.0" prefWidth="188.0" text="Download PDF" />
